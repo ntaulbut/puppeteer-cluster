@@ -14,9 +14,7 @@ export default class Display {
             this.linesCount += 1;
         }
 
-        // Strip lines that are too long
-        const strToLog = str.substr(0, 78);
-        console.log(`${CLEAR_LINE}${strToLog}`);
+        console.log(`${CLEAR_LINE}${str}`);
         this.linesCount += 1;
     }
 
